@@ -123,7 +123,7 @@ def custom_model():
     for layer in cus_model.layers:
         layer.trainable = False
 
-    # Adding layers in a sequential manner
+    
     x = layers.Flatten()(cus_model.output)
 
     x = layers.Dense(512, activation='relu')(x)
